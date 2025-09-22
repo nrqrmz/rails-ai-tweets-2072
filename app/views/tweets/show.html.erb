@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-8 p-4 bg-white shadow">
+      <strong>Tweet (<%= @tweet.shortened.size %>):</strong>
+      <blockquote class="blockquote"><%= @tweet.shortened %></blockquote>
+
+      <strong>Original: </strong>
+      <%= simple_format @tweet.long %>
+    </div>
+  </div>
+</div>
